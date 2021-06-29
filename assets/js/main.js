@@ -465,29 +465,7 @@ function theme() {
         toggleText.text(toggle.attr('data-light'));
     }
 
-    switch (localStorage.getItem('dawn_theme')) {
-        case 'dark':
-            dark();
-            break;
-        case 'light':
-            light();
-            break;
-        default:
-            system();
-            break;
-    }
-
-    toggle.on('click', function (e) {
-        e.preventDefault();
-
-        if (!html.hasClass('theme-dark') && !html.hasClass('theme-light')) {
-            dark();
-        } else if (html.hasClass('theme-dark')) {
-            light();
-        } else {
-            system();
-        }
-    });
+    light();
 }
 
 function pswp(container, element, trigger, caption, isGallery) {

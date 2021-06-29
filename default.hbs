@@ -14,17 +14,8 @@
     </script>
 
     <script>
-        var localTheme = localStorage.getItem('dawn_theme');
-        switch (localTheme) {
-            case 'dark':
-                document.documentElement.classList.add('theme-dark');
-                break;
-            case 'light':
-                document.documentElement.classList.add('theme-light');
-                break;
-            default:
-                break;
-        }
+        var localTheme = 'light';
+        document.documentElement.classList.add('theme-light');
     </script>
 
     {{ghost_head}}
